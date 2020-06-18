@@ -8,12 +8,7 @@ FLAGS = -Wall -Werror -Wextra -Ofast
 
 OSVER := $(shell uname -s)
 
-ifeq ($(OSVER), Linux)
-		LIBFLAGS = -lmlx -lXext -lX11 minilibx/libmlx.a -lm
-	else
-		LIBFLAGS = -framework OpenGL -framework AppKit -lm -lmlx
-	endif
-
+LIBFLAGS = -L ./minilibx_macos -l mlx -framework OpenGL -framework AppKit
 RED= \033[1;31m
 GREEN= \033[1;32m
 YELLOW= \033[1;33m

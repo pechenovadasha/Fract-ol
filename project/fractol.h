@@ -14,14 +14,14 @@
 # define FRACTOL_H
 
 # include <stdio.h>
-# include <mlx.h>
+# include "minilibx_macos/mlx.h"
 # include <math.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
 
 # define WIDTH 1000
-# define HEIGHT 1024
+# define HEIGHT 650
 
 enum			e_types
 {
