@@ -96,7 +96,7 @@ int					main(int argc, char **argv)
 	data.zoom = 1;
 	if (argc != 2)
 		exit(!write(1, "Write name of fract'ol. It is [Mandelbrot]"
-		"or [Julia] or [Burningship]\n", 70));
+		" or [Julia] or [Burningship]\n", 71));
 	ft_initial(&data);
 	ft_menu(&data);
 	ft_check_fractol(argv[1], &data);

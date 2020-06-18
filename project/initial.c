@@ -15,13 +15,13 @@
 void				ft_menu(t_struct *data)
 {
 	mlx_string_put(data->mlx, data->win, 0, HEIGHT, 0xC9FFE5, "Push"
-			"<esc> to exit");
+			" <esc> to exit");
 	mlx_string_put(data->mlx, data->win, 0, HEIGHT + 50, 0xB284BE, "Push <1,"
-			"2, 3, 4, 5> to change color of fractol");
+			" 2, 3, 4, 5> to change color of fractol");
 	mlx_string_put(data->mlx, data->win, 0, HEIGHT + 100, 0x80FFBF,
 			"Push <c> to change color of fractol to 1 %");
 	mlx_string_put(data->mlx, data->win, 0, HEIGHT + 150, 0xFFFF00, "You can"
-			"also increase and reduce the image to see infinity of fractol");
+			" also increase and reduce the image to see infinity of fractol");
 }
 
 int					ft_strcmp(const char *s1, const char *s2)
